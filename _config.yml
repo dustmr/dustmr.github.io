@@ -10,7 +10,7 @@ permalink:        /blog/:year/:month/:day/:title
 title:            'Dustin Roe'
 tagline:          'Junior Full-Stack Ruby Dev'
 description:      'Portfolio of Work'
-url:              'http://dustmr.github.io'
+url:              'https://dustmr.github.io'
 baseurl:          ''
 
 # Navigation
