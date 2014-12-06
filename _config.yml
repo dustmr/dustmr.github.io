@@ -1,0 +1,50 @@
+# Configurations
+markdown: kramdown
+markdown_ext:  markdown,mkdown,mkdn,mkd,md
+highlighter: pygments
+
+# Permalinks
+permalink:        /blog/:year/:month/:day/:title
+
+# Setup
+title:            'Dustin Roe'
+tagline:          'Junior Full-Stack Ruby Dev'
+description:      'Portfolio of Work'
+url:              'http://dustmr.github.io'
+baseurl:          ''
+
+# Navigation
+navigation:
+- text: About
+  url: /about/
+- text: Resume
+  url: /resume/
+- text: Blog
+  url: /blog/
+- text: Tags
+  url: /tags/
+- text: Archive
+  url : /archive/
+
+# Author Details
+author:         'Dustin Roe'
+linkedin:       'https://ca.linkedin.com/pub/dustin-roe/19/8bb/900'
+github:       'https://www.github.com/dustmr'
+putrid:       'https://putridkales.herokuapp.com'
+music:       'https://musicappwall.herokuapp.com'
+comic:       'https://comicolab.herokuapp.com'
+
+
+# Google Analytics
+gahandler: 'UA-52149651-1'
+
+# Disqus
+disqushandler: 'testingblogo'
+
+# Blog Configurations
+paginate: 10 # Posts per page on the blog index
+paginate_path: '/blog/page:num'
+destination: ./_site
+
+# Custom vars
+version:          0.7.9
