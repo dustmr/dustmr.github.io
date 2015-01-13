@@ -1,0 +1,127 @@
+---
+layout: master
+title: Home
+description: Home Page for Jekyll Metro Theme
+---
+
+<div class="bg-cover"></div>
+<div class="container">
+
+	<header class="row">
+	  <div class="col-sm-6 col-md-12" style="margin-top:25px;margin-bottom:25px">
+	    <h1 id="pin">{{site.title}}</h1>
+	  </div>
+	</header>
+	<nav>
+		<div class="row" style="margin-top:25px">
+ 			<div class="col-md-4 col-sm-6 col-xs-12">
+				<a href="#">
+					<div class="tile purple profile bord">
+						<h2 class="title">About Me</h2>
+						<p>A full-stack developer who is passionate about well thought out design and UI's that navigate with ease. A                         perfect blend of creativity, energy, communication, clarity and restraint. An avid gamer, film nerd, and urban-rec enthusiast.'</p>
+					</div>
+				</a>
+		    </div>
+		    <div class="col-md-2 col-sm-3 col-xs-6">
+				<a href="http://bit.ly/1z0xuhD" title="Resume" class="tile orange bord icon-resume"></a>
+			</div>
+			<div class="row">
+			<div class="col-md-1 col-sm-3 col-xs-6">
+				<!-- <div class="row"> -->
+					<div style="padding-left:0px" class="col-md-6 col-sm-6 col-xs-6">
+					    <a href="{{site.linkedin}}" class="mtile blue bord lk-ico-sm"></a>
+			
+					<div style="padding-left:0px" class="col-md-6 col-sm-6 col-xs-6">
+						<a href="{{site.github}}"  class="mtile blue bord tw-ico-sm"></a>
+					</div>
+				</div>
+		   </div>
+			
+				
+			</div> <!-- End of Mini tile -->
+			<!-- div class="col-md-2 col-sm-3 col-xs-6">
+				<div class="live-tile" data-mode="flip" data-delay="4000">
+					<div>
+						<a href="blog/" title="Blog" class="tile orange bord icon-blog"></a>
+					</div>
+					<div>
+						<a href="http://bit.ly/1z0xuhD" title="Blog" class="tile orange bord font-fix">
+						<p>Blog Section:</p>
+							<ol>
+								<li>Posts</li>
+								<li>News</li>
+							</ol>
+						</a>
+					</div>
+				</div>
+			</div> -->
+		</div>
+
+		<div class="row">
+
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				{% for post in site.posts offset:1 limit:1 %}
+				<a href="{{site.comic}}">
+					<div class="tile smaller red bord">
+						<h3 class="title">Comic Sans</h3>
+						<!-- <h4 class="title">Ruby, HTML, CSS, Javascript, Jquery</h4> -->
+						<p> A app that utilizes Canvas to allow users to collaborate on comic strips together. Heavy on the front
+end and UI experience.</p>
+					</div>
+				</a>
+				{% endfor %}
+			</div>
+
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				{% for post in site.posts limit:1 %}
+				<a href="{{site.putrid}}">
+					<div class="tile smaller red bord">
+						<h3 class="title">Putrid Kale</h3>
+						<!-- <h4 class="title">Ruby, Rails, HTML, CSS, Javascript, Jquery</h4> -->
+						<p> First Rails app mocked after Rotten Tomatoes website (except only with good films)</p>
+					</div>
+				</a>
+				{% endfor %}
+			</div>
+
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				{% for post in site.posts limit:1 %}
+				<a href="{{site.music}}">
+					<div class="tile smaller red bord">
+						<h3 class="title">Music Wall</h3>
+						<!-- <h4 class="title">Ruby, HTML, CSS, JQuery</h4> -->
+						<p> An app to share songs through embedded youtube videos and then vote on favorties. My first
+implementation of Sinatra and ActiveRecord. Styled with Bootsrap.js</p>
+					</div>
+				</a>
+				{% endfor %}
+			</div>
+
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				{% for post in site.posts %}
+					{% if post.featured == true %}
+					<a href="{{post.url}}">
+						<div class="tile orange bord">
+							<h3 class="title">Featured Article</h3>
+							<h4 class="title">{{ post.title }}</h4>
+							<p> {{ post.content | strip_html | truncatewords: 10 }}</p>
+						</div>
+					</a>
+					{% break %}
+					{% endif %}
+				{% endfor %}
+			</div>
+		</div>
+
+		<div class="row" style="margin-bottom:25px">
+			<!-- ta -->
+			</div>
+
+		
+		</div>
+
+			
+
+		</div>
+	</nav>
+</div>
