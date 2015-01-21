@@ -59,18 +59,7 @@ description: Home Page for Jekyll Metro Theme
 
 		<div class="row">
 
-			<div class="col-md-4 col-sm-6 col-xs-12">
-				{% for post in site.posts offset:1 limit:1 %}
-				<a href="{{site.comic}}">
-					<div class="tile smaller red bord">
-						<h3 class="title">Comic Sans</h3>
-						<!-- <h4 class="title">Ruby, HTML, CSS, Javascript, Jquery</h4> -->
-						<p> A app that utilizes Canvas to allow users to collaborate on comic strips together. Heavy on the front
-end and UI experience.</p>
-					</div>
-				</a>
-				{% endfor %}
-			</div>
+			
 
 			<div class="col-md-4 col-sm-6 col-xs-12">
 				{% for post in site.posts limit:1 %}
@@ -92,6 +81,19 @@ end and UI experience.</p>
 						<!-- <h4 class="title">Ruby, HTML, CSS, JQuery</h4> -->
 						<p> An app to share songs through embedded youtube videos and then vote on favorties. My first
 implementation of Sinatra and ActiveRecord. Styled with Bootsrap.js</p>
+					</div>
+				</a>
+				{% endfor %}
+			</div>
+
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				{% for post in site.posts offset:1 limit:1 %}
+				<a href="{{site.comic}}">
+					<div class="tile smaller red bord">
+						<h3 class="title">Comic Sans</h3>
+						<!-- <h4 class="title">Ruby, HTML, CSS, Javascript, Jquery</h4> -->
+						<p> A app that utilizes Canvas to allow users to collaborate on comic strips together. Heavy on the front
+end and UI experience.</p>
 					</div>
 				</a>
 				{% endfor %}
